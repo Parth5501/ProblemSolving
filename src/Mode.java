@@ -10,15 +10,19 @@ public class Mode {
 
             HashMap<Integer,Integer> freq = new HashMap<>();
 
-
-
             for(int num:arr){
                 freq.put(num,freq.getOrDefault(num,0)+1);
             }
 
+
+
             for(int i:freq.keySet()){
                 System.out.println(i+" Comes->"+freq.get(i)+" Times");
             }
+
+            System.out.println(freq.values());
+
+
 
 
     }
